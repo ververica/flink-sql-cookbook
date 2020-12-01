@@ -1,7 +1,7 @@
 # Apache Flink SQL Cookbook
 
-The Apache Flink SQL Cookbook is a curated collection of examples, patterns and use cases of Apache Flink SQL. 
-Many of the recipes are completely self-contained and can be run in Ververica Platform as is.
+ The [Apache Flink SQL](https://docs.ververica.com/user_guide/sql_development/index.html) Cookbook is a curated collection of examples, patterns, and use cases of Apache Flink SQL. 
+ Many of the recipes are completely self-contained and can be run in [Ververica Platform](https://docs.ververica.com/index.html) as is.
 
 The cookbook is a living document. 
 The first twenty-four examples are being added as an advent calendar leading up to Christmas 2020.  
