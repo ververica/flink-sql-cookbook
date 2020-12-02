@@ -1,15 +1,16 @@
 # 02 Filtering Data
 
+This example will show how to filter server logs in real-time using a standard `WHERE` clause.
+
+The table it uses, `server_logs`,  is backed by the [`faker` connector](https://github.com/knaufk/flink-faker) which continuously generates rows in memory based on Java Faker expressions and is convenient for testing queries. 
+As such, it is an alternative to the built-in `datagen` connector used for example in [the first recipe](recipes/01/01_create_table.md).
+
+You can continuously filter these logs for those requests that experience authx issues with a simple `SELECT` statement with a `WHERE` clause filtering on the auth related HTTP status codes. 
+In Ververica Platform you  will see the results printed to the UI in the query preview.
+
 ## Script
 
 ```sql
--- This example will show how to filter server logs 
--- in real-time using a standard WHERE clause.
--- The table it uses is backed by the `faker` connector 
--- (https://github.com/knaufk/flink-faker) which 
--- generates rows in memory and is convenient for testing
--- queries. As such, it is an alternative to the built-in 
--- `datagen` connector for testing or prototyping queries.
 CREATE TABLE server_logs ( 
     client_ip STRING,
     client_identity STRING, 
@@ -28,12 +29,7 @@ CREATE TABLE server_logs (
   'fields.status_code.expression' = '#{regexify ''(200|201|204|400|401|403|301){1}''}',
   'fields.size.expression' = '#{number.numberBetween ''100'',''10000000''}'
 );
--- You can filter this (unbounded) table of 
--- requests for those that experience authx issues
--- by running a simple SELECT statement with a 
--- WHERE clause. In Ververica Platform you 
--- will see the results printed to the UI in the 
--- query preview.
+
 SELECT 
   log_time, 
   request_line,
