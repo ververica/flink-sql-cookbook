@@ -10,7 +10,8 @@ The first twenty-four examples are being added as an advent calendar leading up 
 
 ### Foundations
 
-1. [CREATE TABLE](recipes/01/01_create_table.md)
+1. [Creating Tables](recipes/01/01_create_table.md)
+2. [Filtering Data](recipes/02/02_where.md)
 
 ## About Apache Flink
 
