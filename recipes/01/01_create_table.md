@@ -1,4 +1,4 @@
-# 01 `CREATE TABLE`
+# 01 Creating Tables
 
 ## Script
 
