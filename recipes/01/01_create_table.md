@@ -1,5 +1,7 @@
 # 01 Creating Tables
 
+:bulb: This example will show how to create a table using SQL DDL.
+
 Flink SQL operates against logical tables, just like a traditional database.
 However, it does not maintain tables internally but always operates against external systems.
 
