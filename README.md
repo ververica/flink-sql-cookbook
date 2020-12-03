@@ -12,6 +12,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 
 1. [Creating Tables](recipes/01/01_create_table.md)
 2. [Filtering Data](recipes/02/02_where.md)
+3. [Aggregating Data](recipes/03/03_group_by.md)
 
 ## About Apache Flink
 
