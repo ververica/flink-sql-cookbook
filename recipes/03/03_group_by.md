@@ -42,7 +42,8 @@ SELECT
   COUNT(*) AS cnt_status
 FROM server_logs
 GROUP BY 
-  status_code, REGEXP_EXTRACT(user_agent,'[^\/]+');
+  REGEXP_EXTRACT(user_agent,'[^\/]+'),
+  status_code;
 ```
 
 ## Example Output
