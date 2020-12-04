@@ -6,7 +6,7 @@ As outlined in [the first recipe](recipes/01/01_create_table.md) Flink SQL opera
 To publish results of a query for consumption by downstream applications, you write the results of a query into a table. 
 This table can be read by Flink SQL, or directly by connecting to the external system that is storing the data (e.g. an ElasticSearch index.)
 
-This example takes the `server_logs` tables, filter for client errors, and write these logs into another table called `client_errors`.
+This example takes the `server_logs` tables, filters for client errors, and writes these logs into another table called `client_errors`.
 Any number of external systems could back the result table, including Apache Kafka, Apache Hive, ElasticSearch, JDBC, among many others. 
 To keep this example self-contained, `client_errors` is of type `blackhole`: instead of actually writing the data to an external system, the table discards any rows written to it.
 
@@ -60,3 +60,5 @@ WHERE
 An INSERT INTO query that reads from an unbounded table (like `server_logs`) is a long-running application. 
 When you run such a statement in Apache Flink's [SQL Client](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/sqlClient.html) a Flink Job will be submitted to the configured cluster. 
 In Ververica Platform a so called Deployment will be created to manage the execution of the statement.
+
+![Screenshot GIF](https://user-images.githubusercontent.com/11538663/101192280-22480080-365b-11eb-97e9-35f151027c6e.gif)
