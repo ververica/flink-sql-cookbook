@@ -6,8 +6,9 @@ As outlined in [the first recipe](recipes/01/01_create_table.md) Flink SQL opera
 To publish results of a query for consumption by downstream applications, you write the results of a query into a table. 
 This table can be read by Flink SQL, or directly by connecting to the external system that is storing the data (e.g. an ElasticSearch index.)
 
-This example takes the `server_logs` tables, filter for client errors, and write these logs into another table called `client_errors`. 
-In order to keep this example self-contained, `client_errors` is of type `blackhole`: instead of actually writing the data to an external system the table discard any rows written to it.
+This example takes the `server_logs` tables, filter for client errors, and write these logs into another table called `client_errors`.
+Any number of external systems could back the result table, including Apache Kafka, Apache Hive, ElasticSearch, JDBC, among many others. 
+To keep this example self-contained, `client_errors` is of type `blackhole`: instead of actually writing the data to an external system, the table discards any rows written to it.
 
 ## Script
 
