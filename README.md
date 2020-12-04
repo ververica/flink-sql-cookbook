@@ -14,6 +14,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 2. [Filtering Data](recipes/02/02_where.md)
 3. [Aggregating Data](recipes/03/03_group_by.md)
 4. [Inserting Into Tables](recipes/04/04_insert_into.md)
+5. [Working with Temporary Tables](recipes/05/05_temporary_table.md)
 
 ## About Apache Flink
 
