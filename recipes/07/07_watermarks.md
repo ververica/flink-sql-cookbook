@@ -46,4 +46,4 @@ GROUP BY
 
 ## Example Output
 
-![Screenshot](06_group_by_window.png)
+![Screenshot](07_watermarks.png)
