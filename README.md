@@ -15,6 +15,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 3. [Working with Temporary Tables](recipes/05/05_temporary_table.md)
 4. [Filtering Data](recipes/02/02_where.md)
 5. [Aggregating Data](recipes/03/03_group_by.md)
+6. [Sorting Tables](recipes/08/08_order_by.md)
 
 ### Aggregating over Time (Time Windows) 
 1. [Aggregating Time Series Data](recipes/06/06_group_by_window.md)
