@@ -11,12 +11,14 @@ The first twenty-four examples are being added as an advent calendar leading up 
 ### Foundations
 
 1. [Creating Tables](recipes/01/01_create_table.md)
-2. [Filtering Data](recipes/02/02_where.md)
-3. [Aggregating Data](recipes/03/03_group_by.md)
-4. [Inserting Into Tables](recipes/04/04_insert_into.md)
-5. [Working with Temporary Tables](recipes/05/05_temporary_table.md)
-6. [Aggregating Time Series Data](recipes/06/06_group_by_window.md)
-7. [Watermarks](recipes/07/07_watermarks.md)
+2. [Inserting Into Tables](recipes/04/04_insert_into.md)
+3. [Working with Temporary Tables](recipes/05/05_temporary_table.md)
+4. [Filtering Data](recipes/02/02_where.md)
+5. [Aggregating Data](recipes/03/03_group_by.md)
+
+### Aggregating over Time (Time Windows) 
+1. [Aggregating Time Series Data](recipes/06/06_group_by_window.md)
+2. [Watermarks](recipes/07/07_watermarks.md)
 
 ## About Apache Flink
 
