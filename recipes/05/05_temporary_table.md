@@ -5,7 +5,7 @@
 Non-temporary tables in Flink SQL are stored in a catalog, while temporary tables only live within the current session (Apache Flink CLI) or script (Ververica Platform). 
 You can use a temporary table instead of a regular (catalog) table, if it is only meant to be used within the current session or script.
 
-This example is exactly the same as [Inserting Into Tables](recipes/04/04_insert_into.md) except that both `server_logs` and `client_errors` are created as temporary tables.
+This example is exactly the same as [Inserting Into Tables](../04/04_insert_into.md) except that both `server_logs` and `client_errors` are created as temporary tables.
 
 ### Why Temporary Tables?
 
