@@ -18,8 +18,9 @@ The first twenty-four examples are being added as an advent calendar leading up 
 6. [Sorting Tables](recipes/08/08_order_by.md)
 
 ### Aggregating over Time (Time Windows) 
-1. [Aggregating Time Series Data](recipes/06/06_group_by_window.md)
+1. [Aggregating Time Series Data (Tumble Windows)](recipes/06/06_group_by_window.md)
 2. [Watermarks](recipes/07/07_watermarks.md)
+3. [Aggregating Time Series Data (Session Windows)](recipes/09/09_group_by_session_window.md)
 
 ## About Apache Flink
 
