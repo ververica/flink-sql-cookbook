@@ -16,7 +16,6 @@ To count the number of "Forbidden" (403) requests per user over the duration of 
 
 > Tip: You can use the `SESSION_START` and `SESSION_END` [auxiliary functions](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/sql/queries.html#selecting-group-window-start-and-end-timestamps) to check the lower and upper bounds of session windows.
 
-You can use session windows in combination with [watermarks](../07/07_watermarks.md) to indicate how out-of-order you expect the data to be, so that Flink can associate records with the correct session even if these are late.
 
 ## Script
 
