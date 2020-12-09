@@ -49,7 +49,8 @@ SELECT
 FROM server_logs
 WHERE status_code = '403'
 GROUP BY 
-  userid, SESSION(log_time, INTERVAL '10' SECOND);
+  userid, 
+  SESSION(log_time, INTERVAL '10' SECOND);
 ```
 
 ## Example Output
