@@ -1,4 +1,4 @@
-# 09 Aggregating Time Series Data (Session Windows)
+# 09 Analyzing Sessions in Time Series Data
 
 :bulb: This example will show how to aggregate time-series data in real-time using a `SESSION` window.
 
@@ -14,7 +14,7 @@ Unlike tumbling windows, session windows don't have a fixed duration and are tra
 
 To count the number of "Forbidden" (403) requests per user over the duration of a session, you can use the `SESSION` built-in group window function. In this example, a session is bounded by a gap of idleness of 10 seconds (`INTERVAL '10' SECOND`). This means that requests that occur within 10 seconds of the last seen request for each user will be merged into the same session window; and any request that occurs outside of this gap will trigger the creation of a new session window.
 
-> Tip: You can use the `SESSION_START` and `SESSION_END` [auxiliary functions](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/sql/queries.html#selecting-group-window-start-and-end-timestamps) to check the lower and upper bounds of session windows.
+> Tip: You can use the `SESSION_START` and `SESSION_ROWTIME` [auxiliary functions](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/sql/queries.html#selecting-group-window-start-and-end-timestamps) to check the lower and upper bounds of session windows.
 
 
 ## Script
@@ -43,7 +43,7 @@ CREATE TABLE server_logs (
 SELECT  
   userid,
   SESSION_START(log_time, INTERVAL '10' SECOND) AS session_beg,
-  SESSION_END(log_time, INTERVAL '10' SECOND) AS session_end,
+  SESSION_ROWTIME(log_time, INTERVAL '10' SECOND) AS session_end,
   COUNT(request_line) AS request_cnt
 FROM server_logs
 WHERE status_code = '403'
