@@ -17,10 +17,11 @@ The first twenty-four examples are being added as an advent calendar leading up 
 5. [Aggregating Data](recipes/03/03_group_by.md)
 6. [Sorting Tables](recipes/08/08_order_by.md)
 
-### Aggregating over Time (Time Windows) 
+### Aggregating over Time
 1. [Aggregating Time Series Data](recipes/06/06_group_by_window.md)
 2. [Watermarks](recipes/07/07_watermarks.md)
 3. [Analyzing Sessions in Time Series Data](recipes/09/09_group_by_session_window.md)
+4. [Rolling Aggregations on Time Series Data](recipes/10/10_over.md)
 
 ## About Apache Flink
 
