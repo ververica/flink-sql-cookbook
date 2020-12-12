@@ -24,6 +24,9 @@ The first twenty-four examples are being added as an advent calendar leading up 
 4. [Rolling Aggregations on Time Series Data](recipes/10/10_over.md)
 5. [Continuous Top-N](recipes/11/11_top_n.md)
 
+### Other Built-in Functions
+1. [Working with Dates and Timestamps](recipes/12/12_date_time.md)
+
 ## About Apache Flink
 
 Apache Flink is an open source stream processing framework with powerful stream- and batch-processing capabilities.
