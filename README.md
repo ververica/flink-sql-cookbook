@@ -16,6 +16,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 4. [Filtering Data](recipes/02/02_where.md)
 5. [Aggregating Data](recipes/03/03_group_by.md)
 6. [Sorting Tables](recipes/08/08_order_by.md)
+7. [Encapsulating Logic with (Temporary) Views](recipes/13/13_views.md)
 
 ### Aggregations and Analytics
 1. [Aggregating Time Series Data](recipes/06/06_group_by_window.md)
