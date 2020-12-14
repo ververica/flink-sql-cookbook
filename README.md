@@ -28,6 +28,12 @@ The first twenty-four examples are being added as an advent calendar leading up 
 ### Other Built-in Functions
 1. [Working with Dates and Timestamps](recipes/12/12_date_time.md)
 
+### Joins
+
+1. [Regular Joins](recipes/14/14_regular_joins.md)
+
+
+
 ## About Apache Flink
 
 Apache Flink is an open source stream processing framework with powerful stream- and batch-processing capabilities.
