@@ -31,6 +31,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 ### Joins
 
 1. [Regular Joins](recipes/14/14_regular_joins.md)
+2. [Interval Joins](recipes/15/15_interval_joins.md)
 
 
 
