@@ -1,6 +1,6 @@
 # 15 Interval Joins
 
-:bulb: This example will show how you can optimize joins between tables that are related in a temporal context.
+:bulb: This example will show how you can perform joins between tables with events that are related in a temporal context.
 
 ## Why Interval Joins?
 
@@ -46,10 +46,10 @@ WITH (
 );
 
 SELECT
-  o.id order_id,
+  o.id AS order_id,
   o.order_time,
   s.shipment_time,
-  TIMESTAMPDIFF(DAY,o.order_time,s.shipment_time) day_diff
+  TIMESTAMPDIFF(DAY,o.order_time,s.shipment_time) AS day_diff
 FROM orders o
 JOIN shipments s ON o.id = s.order_id
 WHERE 
