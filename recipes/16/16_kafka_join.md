@@ -10,9 +10,8 @@ A similar example would be to join each order with the customer details as of th
 This is exactly what an event-time temporal table join does.
 A temporal table join in Flink SQL provides correct, deterministic results in the presence of out-of-orderness and arbitrary time skew between the two tables. 
 
-Both the `transactions` and `currency_rates` are backed by Kafka topics. 
-Records in the `transactions` table are interpreted as inserts only (`connector` = `kafka`), while the records in `currency_rates` are interpreted as upserts on the primary key. (`connector` = `kafka`).
-In such a scenario, `currency_rates` would usually be backed by a compacted Kafka topic.   
+Both the `transactions` and `currency_rates` tables are backed by Kafka topics, but in the case of rates this topic is compacted (i.e. only the most recent messages for a given key are kept as updated rates flow in).
+Records in `transactions` are interpreted as inserts only, and so the table is backed by the [standard Kafka connector](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/connectors/kafka.html) (`connector` = `kafka`); while the records in `currency_rates` need to be interpreted as upserts based on a primary key, which requires the [Upsert Kafka connector](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/connectors/upsert-kafka.html) (`connector` = `upsert-kafka`).
 
 ## Script
 
@@ -66,6 +65,9 @@ ON t.currency_code = c.currency_code;
 
 <details>
     <summary>Data Generators</summary>
+
+The two topics are populated using a Flink SQL job, too. 
+We use the  [`faker` connector](https://github.com/knaufk/flink-faker) to generate rows in memory based on Java Faker expressions and write those to the respective Kafka topics.  
 
 ### ``currency_rates`` Topic
 
