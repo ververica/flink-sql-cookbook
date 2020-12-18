@@ -63,4 +63,4 @@ JOIN users FOR SYSTEM_TIME AS OF usub.proc_time AS u
 
 ## Example Output
 
-![18_lookup_joins](https://user-images.githubusercontent.com/23521087/102632520-85539000-414f-11eb-972c-8f2cdbb7ccb2.png)
+![18_lookup_joins](https://user-images.githubusercontent.com/23521087/102645588-fcdeea80-4162-11eb-8581-55a06ea82518.png)
