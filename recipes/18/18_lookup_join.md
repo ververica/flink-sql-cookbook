@@ -4,7 +4,9 @@
 
 ## Data Enrichment
 
-Not all data changes frequently, even when working in real-time: in some cases, you might need to enrich streaming data with static — or _reference_ — data that is, for example, stored in a relational database. Flink SQL allows you to look up reference data and join it with a stream using a _lookup join_. The join requires one table to have a [processing time attribute](https://docs.ververica.com/user_guide/sql_development/table_view.html#processing-time-attributes) and the other table to be backed by a [lookup source connector](https://docs.ververica.com/user_guide/sql_development/connectors.html#id1), like the JDBC connector.
+Not all data changes frequently, even when working in real-time: in some cases, you might need to enrich streaming data with static — or _reference_ — data that is stored externally.
+For example, `user` metadata may be stored in a relational database that Flink needs to join against directly.
+Flink SQL allows you to look up reference data and join it with a stream using a _lookup join_. The join requires one table to have a [processing time attribute](https://docs.ververica.com/user_guide/sql_development/table_view.html#processing-time-attributes) and the other table to be backed by a [lookup source connector](https://docs.ververica.com/user_guide/sql_development/connectors.html#id1), like the JDBC connector.
 
 ## Using Lookup Joins
 
