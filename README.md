@@ -34,8 +34,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 1. [Regular Joins](recipes/14/14_regular_joins.md)
 2. [Interval Joins](recipes/15/15_interval_joins.md)
 3. [Temporal Table Join between a non-compacted and compacted Kafka Topic](recipes/16/16_kafka_join.md)
-
-
+4. [Lookup Joins](recipes/18/18_lookup_joins)
 
 ## About Apache Flink
 
