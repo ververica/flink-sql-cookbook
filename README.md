@@ -17,7 +17,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 5. [Aggregating Data](recipes/03/03_group_by.md)
 6. [Sorting Tables](recipes/08/08_order_by.md)
 7. [Encapsulating Logic with (Temporary) Views](recipes/13/13_views.md)
-7. [Statement Sets](recipes/17/17_statement_sets.md)
+7. [Writing Results into Multiple Tables](recipes/17/17_statement_sets.md)
 
 ### Aggregations and Analytics
 1. [Aggregating Time Series Data](recipes/06/06_group_by_window.md)
@@ -35,6 +35,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 2. [Interval Joins](recipes/15/15_interval_joins.md)
 3. [Temporal Table Join between a non-compacted and compacted Kafka Topic](recipes/16/16_kafka_join.md)
 4. [Lookup Joins](recipes/18/18_lookup_joins.md)
+5. [Star Schema Denormalization (N-Way Join)](recipes/19/19_start_schema.md)
 
 ## About Apache Flink
 
