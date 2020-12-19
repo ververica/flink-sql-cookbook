@@ -35,6 +35,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 2. [Interval Joins](recipes/15/15_interval_joins.md)
 3. [Temporal Table Join between a non-compacted and compacted Kafka Topic](recipes/16/16_kafka_join.md)
 4. [Lookup Joins](recipes/18/18_lookup_joins.md)
+5. [Star Schema Denormalization (N-Way Join)](recipes/19/19_start_schema.md)
 
 ## About Apache Flink
 
