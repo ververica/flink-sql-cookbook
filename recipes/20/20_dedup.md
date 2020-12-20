@@ -4,7 +4,7 @@
 
 There are different ways that duplicate events can end up in your data sources, from human error to application bugs. Regardless of the origin, unclean data can have a real impact in the quality (and correctness) of your results. Suppose that your order system occasionally generates duplicate events with the same `order_id`, and that you're only interested in keeping the most recent event for downstream processing.
 
-As a first step, you can use a combination of the `COUNT` function and the `HAVING` clause to check if and which orders have more than one event; and then filter out these events using `ROW_NUMBER()`. In practice, deduplication is a special case of [Top-N aggregation]((../11/11_top_n.md)), where N is 1 (`rownum = 1`) and the ordering column is either the processing or event time of events.
+As a first step, you can use a combination of the `COUNT` function and the `HAVING` clause to check if and which orders have more than one event; and then filter out these events using `ROW_NUMBER()`. In practice, deduplication is a special case of [Top-N aggregation](../11/11_top_n.md), where N is 1 (`rownum = 1`) and the ordering column is either the processing or event time of events.
 
 ## Script
 
