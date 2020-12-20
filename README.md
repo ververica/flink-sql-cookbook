@@ -17,7 +17,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 5. [Aggregating Data](recipes/03/03_group_by.md)
 6. [Sorting Tables](recipes/08/08_order_by.md)
 7. [Encapsulating Logic with (Temporary) Views](recipes/13/13_views.md)
-7. [Writing Results into Multiple Tables](recipes/17/17_statement_sets.md)
+8. [Writing Results into Multiple Tables](recipes/17/17_statement_sets.md)
 
 ### Aggregations and Analytics
 1. [Aggregating Time Series Data](recipes/06/06_group_by_window.md)
@@ -25,6 +25,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 3. [Analyzing Sessions in Time Series Data](recipes/09/09_group_by_session_window.md)
 4. [Rolling Aggregations on Time Series Data](recipes/10/10_over.md)
 5. [Continuous Top-N](recipes/11/11_top_n.md)
+6. [Deduplication](recipes/20/20_dedup.md)
 
 ### Other Built-in Functions
 1. [Working with Dates and Timestamps](recipes/12/12_date_time.md)
