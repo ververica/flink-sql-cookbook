@@ -27,6 +27,7 @@ The first twenty-four examples are being added as an advent calendar leading up 
 5. [Continuous Top-N](recipes/11/11_top_n.md)
 6. [Deduplication](recipes/20/20_dedup.md)
 7. [Chained (Event) Time Windows](recipes/22/22_chained_windows.md)
+8. [Detecting Patterns with MATCH_RECOGNIZE](recipes/23/23_match_recognize.md)
 
 ### Other Built-in Functions
 1. [Working with Dates and Timestamps](recipes/12/12_date_time.md)
