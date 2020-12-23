@@ -11,8 +11,8 @@ of `People` contains a uid for each person and their address and when they moved
 
 The first step is to calculate each city's population using a [continuous aggregation](../03/03_group_by.md).
 While this is simple enough, the real power of Flink SQL comes when people move. By using
-deduplication Flink will automatically issue a retraction for a persons old city when 
-they move. So if John moves from New York to Lost Angelos, the population for New York will 
+[deduplication](../20/20_dedup.md) Flink will automatically issue a retraction for a persons old city when 
+they move. So if John moves from New York to Los Angelos, the population for New York will 
 automatically go down by 1. This gives us the power change-data-capture without having
 to invest in the actual infrastructure of setting it up!
 
@@ -45,7 +45,7 @@ FROM (
     SELECT
         city,
         state,
-        ROW_NUMBER() OVER (PARTITION BY id ORDER BY arrival_time) AS rownum
+        ROW_NUMBER() OVER (PARTITION BY id ORDER BY arrival_time DESC) AS rownum
     FROM People
 )
 WHERE rownum = 1
