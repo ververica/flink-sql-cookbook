@@ -6,7 +6,7 @@ The source table (`spells_cast`) is backed by the [`faker` connector](https://gi
 
 The Ministry of Magic tracks every spell a wizard casts throughout Great Britain and wants to know every wizard's Top 2 all-time favorite spells. 
 
-Flink SQL can be used to calculate continuous [aggregations](.../foundations/05/05_group_by.md), so if we know
+Flink SQL can be used to calculate continuous [aggregations](../../foundations/05/05_group_by.md), so if we know
 each spell a wizard has cast, we can maintain a continuous total of how many times they have cast that spell. 
 
 ```sql

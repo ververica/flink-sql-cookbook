@@ -9,9 +9,9 @@ Given a table with people's addresses, you need to find the two most populous ci
 for each state and continuously update those rankings as people move. The input table
 of `People` contains a uid for each person and their address and when they moved there.
 
-The first step is to calculate each city's population using a [continuous aggregation](.../foundations/05/05_group_by.md).
+The first step is to calculate each city's population using a [continuous aggregation](../../foundations/05/05_group_by.md).
 While this is simple enough, the real power of Flink SQL comes when people move. By using
-[deduplication](.../aggregations-and-analytics/06/06_dedup.md) Flink will automatically issue a retraction for a persons old city when 
+[deduplication](../../aggregations-and-analytics/06/06_dedup.md) Flink will automatically issue a retraction for a persons old city when 
 they move. So if John moves from New York to Los Angelos, the population for New York will 
 automatically go down by 1. This gives us the power change-data-capture without having
 to invest in the actual infrastructure of setting it up!
