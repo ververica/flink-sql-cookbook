@@ -3,43 +3,42 @@
  The [Apache Flink SQL](https://docs.ververica.com/user_guide/sql_development/index.html) Cookbook is a curated collection of examples, patterns, and use cases of Apache Flink SQL. 
  Many of the recipes are completely self-contained and can be run in [Ververica Platform](https://docs.ververica.com/index.html) as is.
 
-The cookbook is a living document. 
-The first twenty-four examples are being added as an advent calendar leading up to Christmas 2020.  
+The cookbook is a living document. :seedling: 
 
 ## Table of Contents
 
 ### Foundations
 
-1. [Creating Tables](recipes/01/01_create_table.md)
-2. [Inserting Into Tables](recipes/04/04_insert_into.md)
-3. [Working with Temporary Tables](recipes/05/05_temporary_table.md)
-4. [Filtering Data](recipes/02/02_where.md)
-5. [Aggregating Data](recipes/03/03_group_by.md)
-6. [Sorting Tables](recipes/08/08_order_by.md)
-7. [Encapsulating Logic with (Temporary) Views](recipes/13/13_views.md)
-8. [Writing Results into Multiple Tables](recipes/17/17_statement_sets.md)
+1. [Creating Tables](foundations/01/01_create_table.md)
+2. [Inserting Into Tables](foundations/02/02_insert_into.md)
+3. [Working with Temporary Tables](foundations/03/03_temporary_table.md)
+4. [Filtering Data](foundations/04/04_where.md)
+5. [Aggregating Data](foundations/05/05_group_by.md)
+6. [Sorting Tables](foundations/06/06_order_by.md)
+7. [Encapsulating Logic with (Temporary) Views](foundations/07/07_views.md)
+8. [Writing Results into Multiple Tables](foundations/08/08_statement_sets.md)
 
 ### Aggregations and Analytics
-1. [Aggregating Time Series Data](recipes/06/06_group_by_window.md)
-2. [Watermarks](recipes/07/07_watermarks.md)
-3. [Analyzing Sessions in Time Series Data](recipes/09/09_group_by_session_window.md)
-4. [Rolling Aggregations on Time Series Data](recipes/10/10_over.md)
-5. [Continuous Top-N](recipes/11/11_top_n.md)
-6. [Deduplication](recipes/20/20_dedup.md)
-7. [Chained (Event) Time Windows](recipes/22/22_chained_windows.md)
-8. [Detecting Patterns with MATCH_RECOGNIZE](recipes/23/23_match_recognize.md)
+1. [Aggregating Time Series Data](aggregations-and-analytics/01/01_group_by_window.md)
+2. [Watermarks](aggregations-and-analytics/02/02_watermarks.md)
+3. [Analyzing Sessions in Time Series Data](aggregations-and-analytics/03/03_group_by_session_window.md)
+4. [Rolling Aggregations on Time Series Data](aggregations-and-analytics/04/04_over.md)
+5. [Continuous Top-N](aggregations-and-analytics/05/05_top_n.md)
+6. [Deduplication](aggregations-and-analytics/06/06_dedup.md)
+7. [Chained (Event) Time Windows](aggregations-and-analytics/07/07_chained_windows.md)
+8. [Detecting Patterns with MATCH_RECOGNIZE](aggregations-and-analytics/08/08_match_recognize.md)
 
 ### Other Built-in Functions
-1. [Working with Dates and Timestamps](recipes/12/12_date_time.md)
+1. [Working with Dates and Timestamps](other-builtin-functions/01/01_date_time.md)
 
 ### Joins
 
-1. [Regular Joins](recipes/14/14_regular_joins.md)
-2. [Interval Joins](recipes/15/15_interval_joins.md)
-3. [Temporal Table Join between a non-compacted and compacted Kafka Topic](recipes/16/16_kafka_join.md)
-4. [Lookup Joins](recipes/18/18_lookup_joins.md)
-5. [Star Schema Denormalization (N-Way Join)](recipes/19/19_start_schema.md)
-6. [Lateral Table Join](recipes/21/21_lateral_join.md)
+1. [Regular Joins](joins/01/01_regular_joins.md)
+2. [Interval Joins](joins/02/02_interval_joins.md)
+3. [Temporal Table Join between a non-compacted and compacted Kafka Topic](joins/03/03_kafka_join.md)
+4. [Lookup Joins](joins/04/04_lookup_joins.md)
+5. [Star Schema Denormalization (N-Way Join)](joins/05/05_star_schema.md)
+6. [Lateral Table Join](joins/06/06_lateral_join.md)
 
 ## About Apache Flink
 
