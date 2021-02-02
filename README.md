@@ -31,6 +31,9 @@ The cookbook is a living document. :seedling:
 ### Other Built-in Functions
 1. [Working with Dates and Timestamps](other-builtin-functions/01/01_date_time.md)
 
+### User-Defined Functions (UDFs)
+1. [Extending SQL with Python UDFs](udfs/01/01_python_udfs.md)
+
 ### Joins
 
 1. [Regular Joins](joins/01/01_regular_joins.md)
