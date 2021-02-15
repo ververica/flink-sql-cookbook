@@ -43,6 +43,10 @@ The cookbook is a living document. :seedling:
 5. [Star Schema Denormalization (N-Way Join)](joins/05/05_star_schema.md)
 6. [Lateral Table Join](joins/06/06_lateral_join.md)
 
+### Set Operations
+
+1. [UNION ALL](set-operations/01/01_union-all.md)
+
 ## About Apache Flink
 
 Apache Flink is an open source stream processing framework with powerful stream- and batch-processing capabilities.
