@@ -1,4 +1,4 @@
-# 01 Union All
+# 01 Building the Union of Multiple Streams
 
 :bulb: This example will show how you can use the set operation `UNION ALL` to combine several streams of data.
 

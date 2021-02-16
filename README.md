@@ -45,7 +45,7 @@ The cookbook is a living document. :seedling:
 
 ### Set Operations
 
-1. [UNION ALL](set-operations/01/01_union-all.md)
+1. [Building the Union of Multiple Streams](set-operations/01/01_union-all.md)
 
 ## About Apache Flink
 
