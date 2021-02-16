@@ -18,8 +18,7 @@ All sources of tracked visits have the `location` and `visit_time` in commmon. S
 `spacecrafts` and one has both.
 
 ```sql
-DROP TABLE IF EXISTS rickandmorty_visits;
-CREATE TABLE rickandmorty_visits ( 
+CREATE TEMPORARY TABLE rickandmorty_visits ( 
     visitor STRING,
     location STRING, 
     visit_time TIMESTAMP(3)
@@ -30,8 +29,7 @@ CREATE TABLE rickandmorty_visits (
   'fields.visit_time.expression' =  '#{date.past ''15'',''5'',''SECONDS''}'
 );
 
-DROP TABLE IF EXISTS spaceagency_visits;
-CREATE TABLE spaceagency_visits ( 
+CREATE TEMPORARY TABLE spaceagency_visits ( 
     spacecraft STRING,
     location STRING, 
     visit_time TIMESTAMP(3)
@@ -42,8 +40,7 @@ CREATE TABLE spaceagency_visits (
   'fields.visit_time.expression' =  '#{date.past ''15'',''5'',''SECONDS''}'
 );
 
-DROP TABLE IF EXISTS hitchhiker_visits;
-CREATE TABLE hitchhiker_visits ( 
+CREATE TEMPORARY TABLE hitchhiker_visits ( 
     visitor STRING,
     starship STRING,
     location STRING, 
@@ -71,6 +68,8 @@ SELECT '' AS visitor, spacecraft, location, visit_time FROM spaceagency_visits
 UNION ALL
 SELECT visitor, starship AS spacecraft, location, visit_time FROM hitchhiker_visits;
 ```
+
+:alien: As we are using `CREATE TEMPORARY TABLE` you need to run both the `CREATE TABLE` and the `SELECT` statements together.
 
 ## The Beauty in VVP
 
