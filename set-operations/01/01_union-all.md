@@ -9,7 +9,7 @@ for a full list of fantastic set operations Apache Flink supports.
 ## The Sources
 
 The examples assumes you are building an application that is tracking visits :raccoon: on foreign planets :chestnut:. 
-There are three sources of visits. The univers of Rick and Morty, the very real world of NASA and such, 
+There are three sources of visits. The universe of Rick and Morty, the very real world of NASA and such, 
 and the not so real world of Hitchhikers Guide To The Galaxy.
 
 All three tables are `unbound` and backed by the [`faker` connector](https://github.com/knaufk/flink-faker).
