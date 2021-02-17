@@ -35,8 +35,8 @@ Patterns are specified in the `PATTERN` clause using row-pattern variables (i.e.
 
 ```sql
 PATTERN (PREMIUM+ BASIC)
-DEFINE S AS PREMIUM.type IN ('premium','platinum'),
-E AS BASIC.type = 'basic');
+DEFINE PREMIUM AS PREMIUM.type IN ('premium','platinum'),
+BASIC AS BASIC.type = 'basic');
 ```
 
 ## Script
@@ -71,8 +71,8 @@ FROM subscriptions
                         AVG(TIMESTAMPDIFF(DAY,PREMIUM.start_date,PREMIUM.end_date)) AS premium_avg_duration,
                         BASIC.start_date AS downgrade_date
                       AFTER MATCH SKIP PAST LAST ROW
-                      --Pattern: one or more 'premium' or 'platinum' subscription events (S)
-                      --followed by a 'basic' subscription event (E) for the same `user_id`
+                      --Pattern: one or more 'premium' or 'platinum' subscription events (PREMIUM)
+                      --followed by a 'basic' subscription event (BASIC) for the same `user_id`
                       PATTERN (PREMIUM+ BASIC)
                       DEFINE PREMIUM AS PREMIUM.type IN ('premium','platinum'),
                              BASIC AS BASIC.type = 'basic');
@@ -80,4 +80,4 @@ FROM subscriptions
 
 ## Example Output
 
-![23_match_recognize](https://user-images.githubusercontent.com/23521087/103023498-5f166180-454e-11eb-99a5-4e16253d6422.png)
+![23_match_recognize](https://user-images.githubusercontent.com/2392216/108039085-ee665f80-703b-11eb-93f9-f8e3b684f315.png)
