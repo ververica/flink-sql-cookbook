@@ -73,7 +73,7 @@ SELECT visitor, starship AS spacecraft, location, visit_time FROM hitchhiker_vis
 
 ## The Beauty in VVP
 
-![01_union_all](screeny.png)
+![screeny](https://user-images.githubusercontent.com/68620/108173907-081cab00-70ff-11eb-823a-8a245b390485.png)
 
 
 The result is a combined stream of people visiting a location in one of those fantastic universes.
