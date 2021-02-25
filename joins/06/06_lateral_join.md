@@ -20,6 +20,8 @@ With this dynamic population table at hand, you are ready to solve the original 
 Unlike a normal join, lateral joins allow the subquery to correlate with columns from other arguments in the `FROM` clause. And unlike a regular subquery, as a join, the lateral can return multiple rows.
 You can now have a sub-query correlated with every individual state, and for every state it ranks by population and returns the top 2 cities.
 
+## Script
+
 ```sql
 CREATE TABLE People (
     id           INT,
@@ -65,5 +67,7 @@ FROM
         LIMIT 2
 );
 ```
+
+## Example Output
 
 ![lateral](https://user-images.githubusercontent.com/23521087/105504738-6bfeb000-5cc8-11eb-9517-1242dfa87bb4.gif)
