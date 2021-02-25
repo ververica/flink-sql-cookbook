@@ -1,4 +1,4 @@
-# 01 Building the Union of Multiple Streams
+# 02 Building the Union of Multiple Streams
 
 :bulb: This example will show how you can use the set operation `UNION ALL` to combine several streams of data.
 
@@ -8,13 +8,13 @@ for a full list of fantastic set operations Apache Flink supports.
 
 ## The Sources
 
-The examples assumes you are building an application that is tracking visits :raccoon: on foreign planets :chestnut:. 
+The examples assumes you are building an application that is tracking visits :fox_face: on foreign planets :chestnut:. 
 There are three sources of visits. The universe of Rick and Morty, the very real world of NASA and such, 
 and the not so real world of Hitchhikers Guide To The Galaxy.
 
-All three tables are `unbound` and backed by the [`faker` connector](https://github.com/knaufk/flink-faker).
+All three tables are `unbounded` and backed by the [`faker` connector](https://github.com/knaufk/flink-faker).
 
-All sources of tracked visits have the `location` and `visit_time` in commmon. Some have `visitors` some have
+All sources of tracked visits have the `location` and `visit_time` in common. Some have `visitors`, some have
 `spacecrafts` and one has both.
 
 ```sql
@@ -69,7 +69,7 @@ UNION ALL
 SELECT visitor, starship AS spacecraft, location, visit_time FROM hitchhiker_visits;
 ```
 
-:alien: As we are using `CREATE TEMPORARY TABLE` you need to run both the `CREATE TABLE` and the `SELECT` statements together.
+:alien: As we are using `CREATE TEMPORARY TABLE`, you need to run both the `CREATE TABLE` and the `SELECT` statements together.
 
 ## The Beauty in VVP
 
