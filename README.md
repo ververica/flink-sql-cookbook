@@ -28,8 +28,9 @@ The cookbook is a living document. :seedling:
 7. [Chained (Event) Time Windows](aggregations-and-analytics/07/07_chained_windows.md)
 8. [Detecting Patterns with MATCH_RECOGNIZE](aggregations-and-analytics/08/08_match_recognize.md)
 
-### Other Built-in Functions
+### Other Built-in Functions & Operators
 1. [Working with Dates and Timestamps](other-builtin-functions/01/01_date_time.md)
+2. [Building the Union of Multiple Streams](other-builtin-functions/02/02_union-all.md)
 
 ### User-Defined Functions (UDFs)
 1. [Extending SQL with Python UDFs](udfs/01/01_python_udfs.md)
@@ -42,10 +43,6 @@ The cookbook is a living document. :seedling:
 4. [Lookup Joins](joins/04/04_lookup_joins.md)
 5. [Star Schema Denormalization (N-Way Join)](joins/05/05_star_schema.md)
 6. [Lateral Table Join](joins/06/06_lateral_join.md)
-
-### Set Operations
-
-1. [Building the Union of Multiple Streams](set-operations/01/01_union-all.md)
 
 ## About Apache Flink
 

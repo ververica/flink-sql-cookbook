@@ -24,7 +24,6 @@ CREATE TEMPORARY TABLE temperature_measurements (
   temperature FLOAT, 
   WATERMARK FOR measurement_time AS measurement_time - INTERVAL '15' SECONDS
 )
-COMMENT ''
 WITH (
   'connector' = 'faker',
   'fields.measurement_time.expression' = '#{date.past ''15'',''SECONDS''}',
