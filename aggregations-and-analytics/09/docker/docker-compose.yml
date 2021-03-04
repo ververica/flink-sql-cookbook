@@ -1,0 +1,40 @@
+version: '3'
+services:
+  postgres:
+    container_name: flink-cdc-postgres
+    build: ./postgres-image
+    image: demo/postgres-pop
+    ports:
+     - 5432:5432
+    environment:
+     - POSTGRES_USER=postgres
+     - POSTGRES_PASSWORD=postgres
+    volumes:
+     - ${PWD}/postgres-image:/docker-entrypoint-initdb.d
+  sql-client:
+    container_name: flink-cdc-sql-client
+    build: ./client-image
+    image: demo/debezium-flink-sql
+    depends_on:
+      - jobmanager
+    environment:
+      FLINK_JOBMANAGER_HOST: jobmanager
+      ZOOKEEPER_CONNECT: zookeeper
+      KAFKA_BOOTSTRAP: kafka
+      ES_HOST: elasticsearch
+  jobmanager:
+    container_name: flink-cdc-jobmanager
+    image: flink:1.12.1-scala_2.11
+    ports:
+      - "8081:8081"
+    command: jobmanager
+    environment:
+      - JOB_MANAGER_RPC_ADDRESS=jobmanager
+  taskmanager:
+    container_name: flink-cdc-taskmanager
+    image: flink:1.12.1-scala_2.11
+    depends_on:
+      - jobmanager
+    command: taskmanager
+    environment:
+      - JOB_MANAGER_RPC_ADDRESS=jobmanager

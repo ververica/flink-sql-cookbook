@@ -27,6 +27,7 @@ The cookbook is a living document. :seedling:
 6. [Deduplication](aggregations-and-analytics/06/06_dedup.md)
 7. [Chained (Event) Time Windows](aggregations-and-analytics/07/07_chained_windows.md)
 8. [Detecting Patterns with MATCH_RECOGNIZE](aggregations-and-analytics/08/08_match_recognize.md)
+9. [Maintaining Materialized Views with Change Data Capture (CDC) and Debezium](aggregations-and-analytics/09/09_cdc_materialized_view.md)
 
 ### Other Built-in Functions & Operators
 1. [Working with Dates and Timestamps](other-builtin-functions/01/01_date_time.md)
