@@ -1,10 +1,14 @@
 # 09 Maintaining Materialized Views with Change Data Capture (CDC) and Debezium
 
+![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.11%2B-lightgrey)
+
 :bulb: This example will show how you can use Flink SQL and Debezium to maintain a materialized view based on database changelog streams.
 
 In the world of analytics, databases are still mostly seen as static sources of data — like a collection of business state just sitting there, waiting to be queried. The reality is that most of the data stored in these databases is continuously produced and continuously changing, so...why not _stream_ it? 
 
-Change Data Capture (CDC) allows you to do just that: track and propagate changes in a database based on its changelog (e.g. the WAL in Postgres) to downstream consumers. [Debezium](https://debezium.io/) is a popular tool for CDC, and is supported in Flink through **1)** the [Kafka SQL Connector](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/connectors/formats/debezium.html) or **2)** a set of "standalone" [Flink CDC Connectors](https://github.com/ververica/flink-cdc-connectors#flink-cdc-connectors).
+Change Data Capture (CDC) allows you to do just that: track and propagate changes in a database based on its changelog (e.g. the WAL in Postgres) to downstream consumers. [Debezium](https://debezium.io/) is a popular tool for CDC, and is supported in Flink through **1)** the [Kafka SQL Connector](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/connectors/formats/debezium.html) and **2)** a set of "standalone" [Flink CDC Connectors](https://github.com/ververica/flink-cdc-connectors#flink-cdc-connectors).
+
+#### Let's get to it!
 
 In this example, you'll monitor a table with insurance claim data related to animal attacks in Australia, and use Flink SQL to maintain an aggregated **materialized view** that is **incrementally updated** with the latest claim costs. You can find a different version of this example deploying Debezium, Kafka and Kafka Connect in [this repository](https://github.com/morsapaes/flink-sql-CDC).
 
@@ -22,9 +26,9 @@ Once all the services are up, you can start the Flink SQL client:
 
 `docker-compose exec sql-client ./sql-client.sh`
 
-## How it Works
+## How it works
 
-The source table (`accident_claims`) is backed by the [`Flink CDC Postgres` connector](https://github.com/ververica/flink-cdc-connectors/wiki/Postgres-CDC-Connector), which reads the transaction log of the `postgres` database to continuously produce change events. So, whenever there is an `INSERT`, `UPDATE` or `DELETE` operation in the `claims.accident_claims` table, it will be propagated to Flink.
+The source table is backed by the [`Flink CDC Postgres` connector](https://github.com/ververica/flink-cdc-connectors/wiki/Postgres-CDC-Connector), which reads the transaction log of the `postgres` database to continuously produce change events. So, whenever there is an `INSERT`, `UPDATE` or `DELETE` operation in the `claims.accident_claims` table, it will be propagated to Flink.
 
 ```sql
 CREATE TABLE accident_claims (
@@ -62,7 +66,7 @@ WHERE claim_status <> 'DENIED'
 GROUP BY accident_detail;
 ```
 
-How can you check that the CDC functionality is _actually_ working? The `docker` directory also includes a data generator script (`postgres_datagen.sql`) with a series of `INSERT` operations with new insurance claims; if you run it, you can see how the query results update in (near) real-time:
+How can you check that the CDC functionality is _actually_ working? The `docker` directory also includes a data generator script with a series of `INSERT` operations with new insurance claims (`postgres_datagen.sql`); if you run it, you can see how the query results update in (near) real-time:
 
 `cat ./postgres_datagen.sql | docker exec -i flink-cdc-postgres psql -U postgres -d postgres`
 
