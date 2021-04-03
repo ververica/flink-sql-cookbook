@@ -30,7 +30,7 @@ CREATE TABLE server_logs (
   'fields.client_identity.expression' =  '-',
   'fields.userid.expression' =  '-',
   'fields.log_time.expression' =  '#{date.past ''15'',''5'',''SECONDS''}',
-  'fields.status_code.expression' = '#{regexify ''(200|201|204|400|401|403|301){1}''}',
+  'fields.status_code.expression' = '#{regexify ''(200|201|204|400|401|403|301){1}''}'
 );
 
 SELECT  
