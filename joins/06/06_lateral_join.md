@@ -1,6 +1,6 @@
 # 06 Lateral Table Join
 
-:bulb: This example will show how you can correlate events using a `LATERAL` join.
+> :bulb: This example will show how you can correlate events using a `LATERAL` join.
 
 A recent addition to the SQL standard is the `LATERAL` join, which allows you to combine 
 the power of a correlated subquery with the expressiveness of a join. 

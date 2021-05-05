@@ -1,6 +1,6 @@
 # 02 Interval Joins
 
-:bulb: This example will show how you can perform joins between tables with events that are related in a temporal context.
+> :bulb: This example will show how you can perform joins between tables with events that are related in a temporal context.
 
 ## Why Interval Joins?
 

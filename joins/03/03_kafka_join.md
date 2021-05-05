@@ -1,6 +1,6 @@
 # 03 Temporal Table Join between a non-compacted and compacted Kafka Topic
 
-:bulb: In this recipe, you will see how to correctly enrich records from one Kafka topic with the corresponding records of another Kafka topic when the order of events matters.  
+> :bulb: In this recipe, you will see how to correctly enrich records from one Kafka topic with the corresponding records of another Kafka topic when the order of events matters.  
 
 Temporal table joins take an arbitrary table (left input/probe site) and correlate each row to the corresponding row’s relevant version in a versioned table (right input/build side). 
 Flink uses the SQL syntax of ``FOR SYSTEM_TIME AS OF`` to perform this operation. 

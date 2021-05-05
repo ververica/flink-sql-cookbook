@@ -2,7 +2,7 @@
 
 ![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.11%2B-lightgrey)
 
-:bulb: This example will show how you can use Flink SQL and Debezium to maintain a materialized view based on database changelog streams.
+> :bulb: This example will show how you can use Flink SQL and Debezium to maintain a materialized view based on database changelog streams.
 
 In the world of analytics, databases are still mostly seen as static sources of data — like a collection of business state(s) just sitting there, waiting to be queried. The reality is that most of the data stored in these databases is continuously produced and is continuously changing, so...why not _stream_ it? 
 

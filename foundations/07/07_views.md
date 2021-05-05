@@ -1,6 +1,6 @@
 # 07 Encapsulating Logic with (Temporary) Views
 
-:bulb: This example will show how you can use (temporary) views to reuse code and to structure long queries and scripts. 
+> :bulb: This example will show how you can use (temporary) views to reuse code and to structure long queries and scripts. 
 
 `CREATE (TEMPORARY) VIEW` defines a view from a query. 
 **A view is not physically materialized.** 

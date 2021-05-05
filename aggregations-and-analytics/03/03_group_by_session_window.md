@@ -1,6 +1,6 @@
 # 03 Analyzing Sessions in Time Series Data
 
-:bulb: This example will show how to aggregate time-series data in real-time using a `SESSION` window.
+> :bulb: This example will show how to aggregate time-series data in real-time using a `SESSION` window.
 
 The source table (`server_logs`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 

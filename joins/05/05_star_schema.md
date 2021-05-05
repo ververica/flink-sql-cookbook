@@ -1,6 +1,6 @@
 # 05 Real Time Star Schema Denormalization (N-Way Join)
 
-:bulb: In this recipe, we will de-normalize a simple star schema with an n-way temporal table join. 	 
+> :bulb: In this recipe, we will de-normalize a simple star schema with an n-way temporal table join. 	 
   
 [Star schemas](https://en.wikipedia.org/wiki/Star_schema) are a popular way of normalizing data within a data warehouse. 
 At the center of a star schema is a **fact table** whose rows contain metrics, measurements, and other facts about the world. 
