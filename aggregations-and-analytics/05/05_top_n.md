@@ -1,5 +1,7 @@
 # 05 Continuous Top-N
 
+![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.9%2B-lightgrey)
+
 > :bulb: This example will show how to continuously calculate the "Top-N" rows based on a given attribute, using an `OVER` window and the `ROW_NUMBER()` function.
 
 The source table (`spells_cast`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions.

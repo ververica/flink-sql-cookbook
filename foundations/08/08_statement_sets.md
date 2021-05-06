@@ -1,5 +1,7 @@
 # 08 Writing Results into Multiple Tables
 
+![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.13%2B-lightgrey)
+
 > :bulb: In this recipe, you will learn how to use [Statement Sets](https://docs.ververica.com/user_guide/sql_development/sql_scripts.html#sql-statements) to run multiple `INSERT INTO` statements in a single, optimized Flink Job. 
 
 Many product requirements involve outputting the results of a streaming application to two or more sinks, such as [Apache Kafka](https://docs.ververica.com/user_guide/sql_development/connectors.html#apache-kafka) for real-time use cases, or a [Filesystem](https://docs.ververica.com/user_guide/sql_development/connectors.html#file-system) for offline ones.

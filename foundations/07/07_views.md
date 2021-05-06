@@ -1,5 +1,7 @@
 # 07 Encapsulating Logic with (Temporary) Views
 
+![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.11%2B-lightgrey)
+
 > :bulb: This example will show how you can use (temporary) views to reuse code and to structure long queries and scripts. 
 
 `CREATE (TEMPORARY) VIEW` defines a view from a query. 
