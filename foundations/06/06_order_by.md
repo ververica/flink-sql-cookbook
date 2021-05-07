@@ -1,6 +1,6 @@
 # 06 Sorting Tables 
 
-:bulb: This example will show how you can sort a table, particularly unbounded tables. 
+> :bulb: This example will show how you can sort a table, particularly unbounded tables. 
 
 Flink SQL supports `ORDER BY`. 
 Bounded Tables can be sorted by any column, descending or ascending. 

@@ -1,6 +1,8 @@
 # 03 Working with Temporary Tables
 
-:bulb: This example will show how and why to create a temporary table using SQL DDL.
+![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.11%2B-lightgrey)
+
+> :bulb: This example will show how and why to create a temporary table using SQL DDL.
 
 Non-temporary tables in Flink SQL are stored in a catalog, while temporary tables only live within the current session (Apache Flink CLI) or script (Ververica Platform). 
 You can use a temporary table instead of a regular (catalog) table, if it is only meant to be used within the current session or script.

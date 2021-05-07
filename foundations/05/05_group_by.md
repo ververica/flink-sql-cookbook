@@ -1,6 +1,6 @@
 # 05 Aggregating Data
 
-:bulb: This example will show how to aggregate server logs in real-time using the standard `GROUP BY` clause.
+> :bulb: This example will show how to aggregate server logs in real-time using the standard `GROUP BY` clause.
 
 The source table (`server_logs`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 

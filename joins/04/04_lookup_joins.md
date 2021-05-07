@@ -1,6 +1,6 @@
 # 04 Lookup Joins
 
-:bulb: This example will show how you can enrich a stream with an external table of reference data (i.e. a _lookup_ table).
+> :bulb: This example will show how you can enrich a stream with an external table of reference data (i.e. a _lookup_ table).
 
 ## Data Enrichment
 

@@ -1,6 +1,6 @@
 # 06 Deduplication
 
-:bulb: This example will show how you can identify and filter out duplicates in a stream of events.
+> :bulb: This example will show how you can identify and filter out duplicates in a stream of events.
 
 There are different ways that duplicate events can end up in your data sources, from human error to application bugs. Regardless of the origin, unclean data can have a real impact in the quality (and correctness) of your results. Suppose that your order system occasionally generates duplicate events with the same `order_id`, and that you're only interested in keeping the most recent event for downstream processing.
 

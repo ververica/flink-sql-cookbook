@@ -1,6 +1,8 @@
 # 02 Watermarks
 
-:bulb: This example will show how to use `WATERMARK`s to work with timestamps in records. 
+![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.10%2B-lightgrey)
+
+> :bulb: This example will show how to use `WATERMARK`s to work with timestamps in records. 
 
 The source table (`doctor_sightings`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 

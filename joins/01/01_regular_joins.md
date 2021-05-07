@@ -1,6 +1,6 @@
 # 01 Regular Joins
 
-:bulb: This example will show how you can use joins to correlate rows across multiple tables.
+> :bulb: This example will show how you can use joins to correlate rows across multiple tables.
 
 Flink SQL supports complex and flexible join operations over continuous tables.
 There are several different types of joins to account for the wide variety of semantics queries may require.

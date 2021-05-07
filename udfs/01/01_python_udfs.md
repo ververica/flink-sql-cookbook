@@ -1,6 +1,8 @@
 # 01 Extending SQL with Python UDFs
 
-:bulb: This example will show how to extend Flink SQL with custom functions written in Python.
+![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.11%2B-lightgrey)
+
+> :bulb: This example will show how to extend Flink SQL with custom functions written in Python.
 
 Flink SQL provides a wide range of [built-in functions](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/functions/systemFunctions.html) that cover most SQL day-to-day work. Sometimes, you need more flexibility to express custom business logic or transformations that aren't easily translatable to SQL: this can be achieved with [User-Defined Functions](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/functions/udfs.html) (UDFs).
 

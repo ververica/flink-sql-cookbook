@@ -1,6 +1,6 @@
 # 02 Building the Union of Multiple Streams
 
-:bulb: This example will show how you can use the set operation `UNION ALL` to combine several streams of data.
+> :bulb: This example will show how you can use the set operation `UNION ALL` to combine several streams of data.
 
 See [our documentation](https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/table/sql/queries/#set-operations)
 for a full list of fantastic set operations Apache Flink supports.
