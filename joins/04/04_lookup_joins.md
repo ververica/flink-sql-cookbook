@@ -14,7 +14,7 @@ In this example, you will look up reference user data stored in MySQL to flag su
 
 ## Script
 
-The source table (`subscriptions`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions. The `users` table is backed by an existing MySQL reference table using the [JDBC connector](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/connectors/jdbc.html).
+The source table (`subscriptions`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions. The `users` table is backed by an existing MySQL reference table using the [JDBC connector](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/connectors/jdbc.html).
 
 ```sql
 CREATE TABLE subscriptions ( 

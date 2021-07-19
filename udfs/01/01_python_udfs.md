@@ -37,7 +37,7 @@ For detailed instructions on how to then make the Python file available as a UDF
 
 #### SQL
 
-The source table (`temperature_measurements`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions. 
+The source table (`temperature_measurements`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions. 
 
 ```sql
 --Register the Python UDF using the fully qualified 

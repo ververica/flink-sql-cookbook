@@ -2,7 +2,7 @@
 
 > :bulb: This example will show how you can use the set operation `UNION ALL` to combine several streams of data.
 
-See [our documentation](https://ci.apache.org/projects/flink/flink-docs-master/docs/dev/table/sql/queries/#set-operations)
+See [our documentation](https://ci.apache.org/projects/flink/flink-docs-stable/docs/dev/table/sql/queries/set-ops/)
 for a full list of fantastic set operations Apache Flink supports.
 
 
@@ -12,7 +12,7 @@ The examples assumes you are building an application that is tracking visits :fo
 There are three sources of visits. The universe of Rick and Morty, the very real world of NASA and such, 
 and the not so real world of Hitchhikers Guide To The Galaxy.
 
-All three tables are `unbounded` and backed by the [`faker` connector](https://github.com/knaufk/flink-faker).
+All three tables are `unbounded` and backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker).
 
 All sources of tracked visits have the `location` and `visit_time` in common. Some have `visitors`, some have
 `spacecrafts` and one has both.

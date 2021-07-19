@@ -41,7 +41,7 @@ BASIC AS BASIC.type = 'basic');
 
 ## Script
 
-The source table (`subscriptions`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
+The source table (`subscriptions`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 
 ```sql
 CREATE TABLE subscriptions ( 

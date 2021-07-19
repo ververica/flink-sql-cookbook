@@ -2,7 +2,7 @@
 
 > :bulb: This example will show how to use [built-in date and time functions](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/functions/systemFunctions.html#temporal-functions) to manipulate temporal fields.
 
-The source table (`subscriptions`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
+The source table (`subscriptions`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 
 #### Date and Time Functions
 
@@ -22,7 +22,7 @@ Assume you have a table with service subscriptions and that you want to continuo
 
 * `CURRENT_TIMESTAMP`: returns the current SQL timestamp (UTC)
 
-For a complete list of built-in date and time functions, check the Flink [documentation](https://ci.apache.org/projects/flink/flink-docs-release-1.12/dev/table/functions/systemFunctions.html#temporal-functions).
+For a complete list of built-in date and time functions, check the Flink [documentation](https://ci.apache.org/projects/flink/flink-docs-stable/docs/dev/table/functions/systemfunctions/#temporal-functions).
 
 > As an exercise, you can try to reproduce the same filtering condition using `TIMESTAMPADD` instead.
 

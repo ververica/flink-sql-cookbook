@@ -2,7 +2,7 @@
 
 > :bulb: This example will show how to calculate an aggregate or cumulative value based on a group of rows using an `OVER` window. A typical use case are rolling aggregations.
 
-The source table (`temperature_measurements`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
+The source table (`temperature_measurements`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 
 OVER window aggregates compute an aggregated value for every input row over a range of ordered rows. 
 In contrast to GROUP BY aggregates, OVER aggregates do not reduce the number of result rows to a single row for every group. 

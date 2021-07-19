@@ -112,7 +112,7 @@ ON t.destination_station_key = ds.station_key
     <summary>Data Generators</summary>
 
 The four topics are populated with Flink SQL jobs, too.
-We use the  [`faker` connector](https://github.com/knaufk/flink-faker) to generate rows in memory based on Java Faker expressions and write those to the respective Kafka topics.  
+We use the  [`faker` connector](https://flink-packages.org/packages/flink-faker) to generate rows in memory based on Java Faker expressions and write those to the respective Kafka topics.  
 
 ### ``train_activities`` Topic
 

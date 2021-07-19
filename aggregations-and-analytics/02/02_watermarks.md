@@ -4,7 +4,7 @@
 
 > :bulb: This example will show how to use `WATERMARK`s to work with timestamps in records. 
 
-The source table (`doctor_sightings`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
+The source table (`doctor_sightings`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 
 The [previous recipe](../01/01_group_by_window.md) showed how a `TUMBLE` group window makes it simple to aggregate time-series data.	 
 
@@ -13,7 +13,7 @@ As different versions of the Doctor travel through time, various people log thei
 We want to track how many times each version of the Doctor is seen each minute. 	 
 Unlike the previous recipe, these records have an embedded timestamp we need to use to perform our calculation. 	 
 
-More often than not, most data will come with embedded timestamps that we want to use for our time series calculations.	We call this timestamp an [event-time attribute](https://ci.apache.org/projects/flink/flink-docs-stable/learn-flink/streaming_analytics.html#event-time-and-watermarks).	 
+More often than not, most data will come with embedded timestamps that we want to use for our time series calculations.	We call this timestamp an [event-time attribute](https://ci.apache.org/projects/flink/flink-docs-stable/docs/learn-flink/streaming_analytics/#event-time-and-watermarks).	 
   
 Event time represents when something actually happened in the real world.
 And it is unique because it is quasi-monotonically increasing; we generally see things that happened earlier before seeing things that happen later. Of course, data will never be perfectly ordered (systems go down, networks are laggy, doctor sighting take time to postmark and mail), and there will be some out-of-orderness in our data. 	 

@@ -2,7 +2,7 @@
 
 > :bulb: This example will show how to aggregate time-series data in real-time using a `TUMBLE` window.
 
-The source table (`server_logs`) is backed by the [`faker` connector](https://github.com/knaufk/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
+The source table (`server_logs`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 
 Many streaming applications work with time-series data.
 To count the number of `DISTINCT` IP addresses seen each minute, rows need to be grouped based on a [time attribute](https://docs.ververica.com/user_guide/sql_development/table_view.html#time-attributes).
