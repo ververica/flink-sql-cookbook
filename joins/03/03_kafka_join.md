@@ -67,7 +67,7 @@ ON t.currency_code = c.currency_code;
     <summary>Data Generators</summary>
 
 The two topics are populated using a Flink SQL job, too. 
-We use the  [`faker` connector](https://github.com/knaufk/flink-faker) to generate rows in memory based on Java Faker expressions and write those to the respective Kafka topics.  
+We use the  [`faker` connector](https://flink-packages.org/packages/flink-faker) to generate rows in memory based on Java Faker expressions and write those to the respective Kafka topics.  
 
 ### ``currency_rates`` Topic
 
