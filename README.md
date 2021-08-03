@@ -19,7 +19,7 @@ The cookbook is a living document. :seedling:
 8. [Writing Results into Multiple Tables](foundations/08/08_statement_sets.md)
 
 ### Aggregations and Analytics
-1. [Aggregating Time Series Data](aggregations-and-analytics/01/01_group_by_window.md)
+1. [Aggregating Time Series Data](aggregations-and-analytics/01/01_group_by_window_tvf.md)
 2. [Watermarks](aggregations-and-analytics/02/02_watermarks.md)
 3. [Analyzing Sessions in Time Series Data](aggregations-and-analytics/03/03_group_by_session_window.md)
 4. [Rolling Aggregations on Time Series Data](aggregations-and-analytics/04/04_over.md)
@@ -28,6 +28,7 @@ The cookbook is a living document. :seedling:
 7. [Chained (Event) Time Windows](aggregations-and-analytics/07/07_chained_windows.md)
 8. [Detecting Patterns with MATCH_RECOGNIZE](aggregations-and-analytics/08/08_match_recognize.md)
 9. [Maintaining Materialized Views with Change Data Capture (CDC) and Debezium](aggregations-and-analytics/09/09_cdc_materialized_view.md)
+10. [Hopping Time Windows](aggregations-and-analytics/10/10_hopping_time_windows.md)
 
 ### Other Built-in Functions & Operators
 1. [Working with Dates and Timestamps](other-builtin-functions/01/01_date_time.md)
@@ -44,6 +45,9 @@ The cookbook is a living document. :seedling:
 4. [Lookup Joins](joins/04/04_lookup_joins.md)
 5. [Star Schema Denormalization (N-Way Join)](joins/05/05_star_schema.md)
 6. [Lateral Table Join](joins/06/06_lateral_join.md)
+
+### Former Recipes
+1. [Aggregating Time Series Data (Before Flink 1.13)](aggregations-and-analytics/01/01_group_by_window.md)
 
 ## About Apache Flink
 
