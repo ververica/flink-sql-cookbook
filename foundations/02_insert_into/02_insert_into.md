@@ -2,7 +2,7 @@
 
 > :bulb: This recipe shows how to insert rows into a table so that downstream applications can read them.
 
-As outlined in [the first recipe](../01/01_create_table.md) Flink SQL operates on tables, that are stored in external systems.
+As outlined in [the first recipe](../01_create_table/01_create_table.md) Flink SQL operates on tables, that are stored in external systems.
 To publish results of a query for consumption by downstream applications, you write the results of a query into a table. 
 This table can be read by Flink SQL, or directly by connecting to the external system that is storing the data (e.g. an ElasticSearch index.)
 

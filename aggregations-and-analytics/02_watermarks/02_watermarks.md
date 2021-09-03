@@ -6,7 +6,7 @@
 
 The source table (`doctor_sightings`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 
-The [previous recipe](../01/01_group_by_window.md) showed how a `TUMBLE` group window makes it simple to aggregate time-series data.	 
+The [previous recipe](../01_group_by_window/01_group_by_window.md) showed how a `TUMBLE` group window makes it simple to aggregate time-series data.	 
 
 [The Doctor](https://tardis.fandom.com/wiki/The_Doctor) is a renegade time lord who travels through space and time in a [TARDIS](https://tardis.fandom.com/wiki/The_Doctor%27s_TARDIS).
 As different versions of the Doctor travel through time, various people log their sightings.

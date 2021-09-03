@@ -4,7 +4,7 @@
 
 ## Why Interval Joins?
 
-In a [previous recipe](../01/01_regular_joins.md), you learned about using _regular joins_ in Flink SQL. This kind of join works well for some scenarios, but for others a more efficient type of join is required to keep resource utilization from growing indefinitely.
+In a [previous recipe](../01_regular_joins/01_regular_joins.md), you learned about using _regular joins_ in Flink SQL. This kind of join works well for some scenarios, but for others a more efficient type of join is required to keep resource utilization from growing indefinitely.
 
 One of the ways to optimize joining operations in Flink SQL is to use [_interval joins_](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/streaming/joins.html#interval-joins). An interval join is defined by a join predicate that checks if the time attributes of the input events are within certain time constraints (i.e. a time window).
 

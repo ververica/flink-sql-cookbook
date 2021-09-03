@@ -5,12 +5,12 @@
 The source table (`server_logs`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 
 Based on our `server_logs` table we would like to compute the average request size over one minute **as well as five minute (event) windows.** 
-For this, you could run two queries, similar to the one in [Aggregating Time Series Data](../01/01_group_by_window.md). 
+For this, you could run two queries, similar to the one in [Aggregating Time Series Data](../01_group_by_window/01_group_by_window.md). 
 At the end of the page is the script and resulting JobGraph from this approach. 
 
 In the main part, we will follow a slightly more efficient approach that chains the two aggregations: the one-minute aggregation output serves as the five-minute aggregation input.
 
-We then use a [Statements Set](../../foundations/08/08_statement_sets.md) to write out the two result tables. 
+We then use a [Statements Set](../../foundations/08_statement_sets/08_statement_sets.md) to write out the two result tables. 
 To keep this example self-contained, we use two tables of type `blackhole` instead of `kafka`, `filesystem`, or any other [connectors](https://ci.apache.org/projects/flink/flink-docs-stable/docs/connectors/table/overview/). 
 
 ## Script
