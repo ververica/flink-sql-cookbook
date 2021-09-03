@@ -6,7 +6,7 @@ The source table (`server_logs`) is backed by the [`faker` connector](https://fl
 
 #### What are Session Windows?
 
-In a [previous recipe](../01/01_group_by_window.md), you learned about _tumbling windows_. Another way to group time-series data is using [_session windows_](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/sql/queries.html#group-windows), which aggregate records into _sessions_ that represent periods of activity followed by gaps of idleness. Think, for example, of user sessions on a website: a user will be active for a given period of time, then leave the website; and each user will be active at different times. To analyze user behaviour, it's useful to aggregate their actions on the website for each period of activity (i.e. _session_).
+In a [previous recipe](../01_group_by_window/01_group_by_window.md), you learned about _tumbling windows_. Another way to group time-series data is using [_session windows_](https://ci.apache.org/projects/flink/flink-docs-stable/dev/table/sql/queries.html#group-windows), which aggregate records into _sessions_ that represent periods of activity followed by gaps of idleness. Think, for example, of user sessions on a website: a user will be active for a given period of time, then leave the website; and each user will be active at different times. To analyze user behaviour, it's useful to aggregate their actions on the website for each period of activity (i.e. _session_).
 
 Unlike tumbling windows, session windows don't have a fixed duration and are tracked independenlty across keys (i.e. windows of different keys will have different durations).
 

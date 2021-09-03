@@ -6,7 +6,7 @@
 
 The source table (`bids`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
 
-In one of our previous recipes we've shown how you can [aggregate time series data](../01/01_group_by_window_tvf.md) using `TUMBLE`. 
+In one of our previous recipes we've shown how you can [aggregate time series data](../01_group_by_window/01_group_by_window_tvf.md) using `TUMBLE`. 
 To display every 30 seconds the moving average of bidding prices per currency per 1 minute, we will use the built-in `HOP` [function](https://ci.apache.org/projects/flink/flink-docs-stable/docs/dev/table/sql/queries/window-agg/).
 
 The difference between a `HOP` and a `TUMBLE` function is that with a `HOP` you can "jump" forward in time. That's why you have to specify both the length of the window and the interval you want to jump forward. 

@@ -8,7 +8,7 @@ The source table (`subscriptions`) is backed by the [`faker` connector](https://
 
 Working with dates and timestamps is commonplace in SQL, but your input may come in different types, formats or even timezones. Flink SQL has multiple built-in functions that are useful to deal with this kind of situation and make it convenient to handle temporal fields.
 
-Assume you have a table with service subscriptions and that you want to continuously [filter](../../foundations/04/04_where.md) these subscriptions to find the ones that have associated payment methods expiring in less than 30 days. The `start_date` and `end_date` are [Unix timestamps](https://en.wikipedia.org/wiki/Unix_time) (i.e. epochs) — which are not very human-readable and should be converted. Also, you want to parse the `payment_expiration` timestamp into its corresponding day, month and year parts. What are some functions that would be useful?
+Assume you have a table with service subscriptions and that you want to continuously [filter](../../foundations/04_where/04_where.md) these subscriptions to find the ones that have associated payment methods expiring in less than 30 days. The `start_date` and `end_date` are [Unix timestamps](https://en.wikipedia.org/wiki/Unix_time) (i.e. epochs) — which are not very human-readable and should be converted. Also, you want to parse the `payment_expiration` timestamp into its corresponding day, month and year parts. What are some functions that would be useful?
 
 * `TO_TIMESTAMP(string[, format])`: converts a `STRING` value to a `TIMESTAMP` using the specified format (default: 'yyyy-MM-dd HH:mm:ss')
 
