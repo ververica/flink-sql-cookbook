@@ -34,6 +34,7 @@ The cookbook is a living document. :seedling:
 ### Other Built-in Functions & Operators
 1. [Working with Dates and Timestamps](other-builtin-functions/01_date_time/01_date_time.md)
 2. [Building the Union of Multiple Streams](other-builtin-functions/02_union-all/02_union-all.md)
+3. [Filtering out Late Data](other-builtin-functions/03_current_watermark/03_current_watermark.md)
 
 ### User-Defined Functions (UDFs)
 1. [Extending SQL with Python UDFs](udfs/01_python_udfs/01_python_udfs.md)
