@@ -52,7 +52,7 @@ SELECT
   EXTRACT(YEAR FROM payment_expiration) AS exp_year    --same as YEAR(ts)
 FROM subscriptions
 WHERE 
-  TIMESTAMPDIFF(DAY,CURRENT_TIMESTAMP,payment_expiration) < 30;
+  TIMESTAMPDIFF(DAY,CAST(CURRENT_TIMESTAMP AS TIMESTAMP(3)),payment_expiration) < 30;
 ```
 
 ## Example Output
