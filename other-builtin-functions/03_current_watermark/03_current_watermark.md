@@ -55,14 +55,14 @@ CREATE TABLE `late_usage_events` (
 -- Create a view with non-late data
 CREATE TEMPORARY VIEW `mobile_data` AS
     SELECT * FROM mobile_usage
-    WHERE CURRENT_WATERMARK(log_time) IS NOT NULL
-          OR log_time < CURRENT_WATERMARK(log_time);
+    WHERE CURRENT_WATERMARK(log_time) IS NULL
+          OR log_time > CURRENT_WATERMARK(log_time);
 
 -- Create a view with late data
 CREATE TEMPORARY VIEW `late_mobile_data` AS 
     SELECT * FROM mobile_usage
-        WHERE CURRENT_WATERMARK(log_time) IS NULL
-              OR log_time > CURRENT_WATERMARK(log_time);
+        WHERE CURRENT_WATERMARK(log_time) IS NOT NULL
+              AND log_time <= CURRENT_WATERMARK(log_time);
 
 BEGIN STATEMENT SET;
 
@@ -83,3 +83,7 @@ END;
 ## Example Output
 
 ![03_current_watermark](03_current_watermark.png)
+
+### Late data
+
+![03_late_data](03_late_data.png)
