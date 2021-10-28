@@ -2,6 +2,8 @@
 
 > :bulb: This recipe shows how to insert rows into a table so that downstream applications can read them.
 
+The source table (`server_logs`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates rows in memory based on Java Faker expressions.
+
 As outlined in [the first recipe](../01_create_table/01_create_table.md) Flink SQL operates on tables, that are stored in external systems.
 To publish results of a query for consumption by downstream applications, you write the results of a query into a table. 
 This table can be read by Flink SQL, or directly by connecting to the external system that is storing the data (e.g. an ElasticSearch index.)
