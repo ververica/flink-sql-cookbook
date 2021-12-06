@@ -36,7 +36,7 @@ The cookbook is a living document. :seedling:
 2. [Building the Union of Multiple Streams](other-builtin-functions/02_union-all/02_union-all.md)
 3. [Filtering out Late Data](other-builtin-functions/03_current_watermark/03_current_watermark.md)
 4. [Overriding table options](other-builtin-functions/04_override_table_options/04_override_table_options.md)
-5. [Expanding arrays into new rows](other-builtin-functions/05_expanding_arrays/05_expanding_arrays)
+5. [Expanding arrays into new rows](other-builtin-functions/05_expanding_arrays/05_expanding_arrays.md)
 
 ### User-Defined Functions (UDFs)
 1. [Extending SQL with Python UDFs](udfs/01_python_udfs/01_python_udfs.md)
