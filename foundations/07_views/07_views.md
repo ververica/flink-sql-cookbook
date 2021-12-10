@@ -42,7 +42,7 @@ CREATE TABLE server_logs (
 CREATE VIEW successful_requests AS 
 SELECT * 
 FROM server_logs
-WHERE status_code SIMILAR TO '[2,3][0-9][0-9]'
+WHERE status_code SIMILAR TO '[2,3][0-9][0-9]';
 
 SELECT * FROM successful_requests;
 ```

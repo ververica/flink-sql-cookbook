@@ -73,6 +73,7 @@ CREATE TEMPORARY TABLE server_logs (
   'fields.status_code.expression' = '#{regexify ''(200|201|204|400|401|403|301){1}''}',
   'fields.size.expression' = '#{number.numberBetween ''100'',''10000000''}'
 );
+
 SELECT 
   TUMBLE_ROWTIME(log_time, INTERVAL '1' MINUTE) AS window_time,
   REGEXP_EXTRACT(user_agent,'[^\/]+') AS browser,
@@ -83,7 +84,7 @@ GROUP BY
   TUMBLE(log_time, INTERVAL '1' MINUTE)
 ORDER BY
   window_time,
-  cnt_browser DESC
+  cnt_browser DESC;
 ```
 
 ### Example Output
