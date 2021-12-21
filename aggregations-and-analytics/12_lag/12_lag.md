@@ -1,12 +1,14 @@
-# 12 Lag
+# 12 Compare previous values
 
-![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.13%2B-lightgrey)
+![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.19%2B-lightgrey)
 
 > :bulb: This example will show how to retrieve the previous value and compute trends for a specific data partition.
 
 The source table (`fake_stocks`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates fake stock quotation in memory based on Java Faker expressions.
 
-In this recipe we're using the [LAG](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/table/functions/systemfunctions/#aggregate-functions) function to retrieve the previous value for a specific stock and then calculate its trend.
+In this recipe we're going to create a table which contains stock ticker updates for which we want to determine if the new stock price has gone up or down compared to its previous value. 
+
+First we create the table, then use a select statement including the [LAG](https://nightlies.apache.org/flink/flink-docs-stable/docs/dev/table/functions/systemfunctions/#aggregate-functions) function to retrieve the previous stock value. Finally using the `case` statement in the final select we compare the current stock price against the previous value to determine the trend.
 
 ```sql
 CREATE TABLE fake_stocks ( 
@@ -40,4 +42,4 @@ from current_and_previous;
 
 ## Example Output
 
-![12_lag](12_lag.png)
+![12_lag](12_lag.gif)
