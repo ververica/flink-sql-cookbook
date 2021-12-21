@@ -36,7 +36,7 @@ SELECT
   status_code 
 FROM server_logs
 WHERE
-  status_code IN ('403', '401')
+  status_code IN ('403', '401');
 ```
 
 ## Example Output

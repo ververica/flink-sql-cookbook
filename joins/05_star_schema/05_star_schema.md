@@ -93,7 +93,7 @@ ON t.passenger_key = p.passenger_key
 LEFT JOIN stations FOR SYSTEM_TIME AS OF t.actual_departure_date AS os
 ON t.origin_station_key = os.station_key
 LEFT JOIN stations FOR SYSTEM_TIME AS OF t.actual_departure_date AS ds
-ON t.destination_station_key = ds.station_key
+ON t.destination_station_key = ds.station_key;
 ```
 
 ## Example Output

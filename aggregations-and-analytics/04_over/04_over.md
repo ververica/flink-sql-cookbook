@@ -44,7 +44,7 @@ WINDOW last_minute AS (
   PARTITION BY city
   ORDER BY measurement_time
   RANGE BETWEEN INTERVAL '1' MINUTE PRECEDING AND CURRENT ROW 
-)
+);
 ```
 ## Example Output
 

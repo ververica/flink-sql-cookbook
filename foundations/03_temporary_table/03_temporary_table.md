@@ -58,7 +58,7 @@ SELECT
   size
 FROM server_logs
 WHERE 
-  status_code SIMILAR TO '4[0-9][0-9]'
+  status_code SIMILAR TO '4[0-9][0-9]';
 ```
 
 ## Example Output
