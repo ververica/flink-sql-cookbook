@@ -30,6 +30,7 @@ The cookbook is a living document. :seedling:
 9. [Maintaining Materialized Views with Change Data Capture (CDC) and Debezium](aggregations-and-analytics/09_cdc_materialized_view/09_cdc_materialized_view.md)
 10. [Hopping Time Windows](aggregations-and-analytics/10_hopping_time_windows/10_hopping_time_windows.md)
 11. [Window Top-N](aggregations-and-analytics/11_window_top_n/11_window_top_n.md)
+12. [Retrieve previous row value without self-join](aggregations-and-analytics/12_lag/12_lag.md)
 
 ### Other Built-in Functions & Operators
 1. [Working with Dates and Timestamps](other-builtin-functions/01_date_time/01_date_time.md)
