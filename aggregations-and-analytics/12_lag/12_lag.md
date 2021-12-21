@@ -1,4 +1,4 @@
-# 12 Compare previous values
+# 12 Retrieve previous row value without self-join
 
 ![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.19%2B-lightgrey)
 
