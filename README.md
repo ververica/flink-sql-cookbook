@@ -62,6 +62,6 @@ Learn more about Flink at https://flink.apache.org/.
 
 ## License 
 
-Copyright © 2020-2021 Ververica GmbH
+Copyright © 2020-2022 Ververica GmbH
 
 Distributed under Apache License, Version 2.0.

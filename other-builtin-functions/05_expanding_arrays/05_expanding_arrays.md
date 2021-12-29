@@ -1,4 +1,4 @@
-# 04 Expanding arrays into new rows
+# 05 Expanding arrays into new rows
 
 ![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.3%2B-lightgrey)
 
