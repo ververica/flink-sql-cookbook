@@ -38,6 +38,7 @@ The cookbook is a living document. :seedling:
 3. [Filtering out Late Data](other-builtin-functions/03_current_watermark/03_current_watermark.md)
 4. [Overriding table options](other-builtin-functions/04_override_table_options/04_override_table_options.md)
 5. [Expanding arrays into new rows](other-builtin-functions/05_expanding_arrays/05_expanding_arrays.md)
+6. [Split strings into maps](other-builtin-functions/06_split_strings_into_maps/06_split_strings_into_maps.md)
 
 ### User-Defined Functions (UDFs)
 1. [Extending SQL with Python UDFs](udfs/01_python_udfs/01_python_udfs.md)
@@ -62,6 +63,6 @@ Learn more about Flink at https://flink.apache.org/.
 
 ## License 
 
-Copyright © 2020-2021 Ververica GmbH
+Copyright © 2020-2022 Ververica GmbH
 
 Distributed under Apache License, Version 2.0.
