@@ -10,15 +10,14 @@ The source table (`iot_status`) is backed by the [`faker` connector](https://fli
 
 In this recipe we create a table which contains IoT devices status updates including timestamp and device time zone, which we'll convert to UTC. 
 
-We create the table first, then use a select statement including the [CONVERT_TZ](https://nightlies.apache.org/flink/flink-docs-stable/docs/dev/table/functions/systemfunctions/#temporal-functions) function to convert the timestamp to UTC.
+We create the table first, then use the [`CONVERT_TZ`](https://nightlies.apache.org/flink/flink-docs-stable/docs/dev/table/functions/systemfunctions/#temporal-functions) function to convert the `iot_timestamp`, casted to `string` as required by the function, to UTC.
 
 ```sql
 CREATE TABLE iot_status ( 
     device_ip       STRING,
     device_timezone STRING,
     iot_timestamp   TIMESTAMP(3),
-    status_code     STRING, 
-    WATERMARK FOR iot_timestamp AS iot_timestamp - INTERVAL '30' SECONDS
+    status_code     STRING
 ) WITH (
   'connector' = 'faker', 
   'fields.device_ip.expression' = '#{Internet.publicIpV4Address}',
@@ -37,6 +36,8 @@ SELECT
 FROM iot_status;
 ```
 
+The 
+
 ## Example Output
 
-![09_consolidate_timezones](09_consolidate_timezones.gif)
+![09_convert_timezones](09_convert_timezones.gif)
