@@ -1,16 +1,16 @@
-# 09 Consolidate Timestamp Timezones
+# 09 Convert timestamps with timezones
 
 ![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.19%2B-lightgrey)
 
-> :bulb: In this recipe, you will learn how to consolidate timestamps with different timezones to UTC. 
+> :bulb: In this recipe, you will learn how to consolidate timestamps with different time zones to UTC. 
 
-Timestamps in incoming data can refer to different timezones and consolidating them to the same timezone (e.g. UTC) is a prerequisite to ensure correctness in temporal analysis.
+Timestamps in incoming data can refer to different time zones and consolidating them to the same time zone (e.g. UTC) is a prerequisite to ensure correctness in temporal analysis.
 
 The source table (`iot_status`) is backed by the [`faker` connector](https://flink-packages.org/packages/flink-faker), which continuously generates fake IoT status messages in memory based on Java Faker expressions.
 
-In this recipe we're going to create a table which contains IoT devices status updates including timestamp and device timezone which we'll convert to UTC. 
+In this recipe we create a table which contains IoT devices status updates including timestamp and device time zone, which we'll convert to UTC. 
 
-First we create the table, then use a select statement including the [CONVERT_TZ](https://nightlies.apache.org/flink/flink-docs-stable/docs/dev/table/functions/systemfunctions/#temporal-functions) function to consolidate the timestamp to UTC.
+We create the table first, then use a select statement including the [CONVERT_TZ](https://nightlies.apache.org/flink/flink-docs-stable/docs/dev/table/functions/systemfunctions/#temporal-functions) function to convert the timestamp to UTC.
 
 ```sql
 CREATE TABLE iot_status ( 
