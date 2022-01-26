@@ -17,6 +17,7 @@ The cookbook is a living document. :seedling:
 6. [Sorting Tables](foundations/06_order_by/06_order_by.md)
 7. [Encapsulating Logic with (Temporary) Views](foundations/07_views/07_views.md)
 8. [Writing Results into Multiple Tables](foundations/08_statement_sets/08_statement_sets.md)
+9. [Convert timestamps with timezones](foundations/09_convert_timezones/09_convert_timezones.md)
 
 ### Aggregations and Analytics
 1. [Aggregating Time Series Data](aggregations-and-analytics/01_group_by_window/01_group_by_window_tvf.md)
