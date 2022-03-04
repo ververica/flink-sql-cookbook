@@ -14,7 +14,7 @@ each spell a wizard has cast, we can maintain a continuous total of how many tim
 ```sql
 SELECT wizard, spell, COUNT(*) AS times_cast
 FROM spells_cast
-GROUP BY wizard;
+GROUP BY wizard, spell;
 ```
 
 This result can be used in an `OVER` window to calculate a [Top-N](https://docs.ververica.com/user_guide/sql_development/queries.html#top-n).
