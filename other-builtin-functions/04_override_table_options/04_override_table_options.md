@@ -50,7 +50,7 @@ SELECT * FROM `airports` /*+ OPTIONS('csv.ignore-parse-errors'='true') */ WHERE 
 You can apply SQL Hints for all possible table options. For example, if you SQL job which reads from Kafka has crashed, you can override the default reading position:
 
 ```sql
-SELECT * FROM `your_kafka_topic` /*+ OPTIONS('scan.startup.mode'='group-offsets');
+SELECT * FROM `your_kafka_topic` /*+ OPTIONS('scan.startup.mode'='group-offsets') */;
 ```
 
 Tables, views and functions are all registered in the catalog. The catalog is a collection of metadata. Using SQL Hints, you can override any defined metadata.  
