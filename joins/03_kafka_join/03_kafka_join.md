@@ -20,7 +20,7 @@ CREATE TEMPORARY TABLE currency_rates (
   `currency_code` STRING,
   `eur_rate` DECIMAL(6,4),
   `rate_time` TIMESTAMP(3),
-  WATERMARK FOR `rate_time` AS rate_time - INTERVAL '15' SECONDS,
+  WATERMARK FOR `rate_time` AS rate_time - INTERVAL '15' SECOND,
   PRIMARY KEY (currency_code) NOT ENFORCED
 ) WITH (
   'connector' = 'upsert-kafka',
@@ -35,7 +35,7 @@ CREATE TEMPORARY TABLE transactions (
   `currency_code` STRING,
   `total` DECIMAL(10,2),
   `transaction_time` TIMESTAMP(3),
-  WATERMARK FOR `transaction_time` AS transaction_time - INTERVAL '30' SECONDS
+  WATERMARK FOR `transaction_time` AS transaction_time - INTERVAL '30' SECOND
 ) WITH (
   'connector' = 'kafka',
   'topic' = 'transactions',
