@@ -1,6 +1,6 @@
 # 09 Convert timestamps with timezones
 
-![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.19%2B-lightgrey)
+![Twitter Badge](https://img.shields.io/badge/Flink%20Version-1.9%2B-lightgrey)
 
 > :bulb: In this recipe, you will learn how to consolidate timestamps with different time zones to UTC. 
 
